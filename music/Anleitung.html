@@ -1,0 +1,82 @@
+<html>
+<style>code { font-family: monospace; }</style>
+<body style="max-width: 45em;">
+<h1>Anleitung Musik</h1>
+
+<p>Bei diesem Thema geht es darum mit Tönen und Musik zu experimentieren.
+Dazu musst du dem Computer genau sagen, was er machen soll. Dies geschieht,
+indem du ein Programm schreibst.</p>
+
+<p>Du kannst im folgenden mit verschiedenen Programmen experimentieren. Ich gebe dir hier
+aber noch ein bisschen Hintergrund über Musik und Töne. Was passiert eigentlich wenn ein
+Lautsprecher einen Ton abspielt? Der Lautsprecher besteht im wesentlichen aus einem Karton,
+der sich hin und her bewegen kann. Man macht dies typischerweise mit einem Elektromagneten.
+Damit kann man über einen Strom steuern, wie stark der Karton nach vorne oder hinten gezogen
+wird.</p>
+
+<p>Wenn man den Karton nun 440 mal pro Sekunde nach vorne und hinten zieht, wird die Luft
+gedrückt und gezogen und diese Druckveränderungen erreichen unser Ohr. Das Ohr erkennt
+dann aufgrund der 440 Schwingungen, dass es sich um den Ton a' handelt.</p>
+
+<p>Im Computer drücken wir das nach vorne und nach hinten ziehen des Kartons mit Zahlen
+aus: 1 heisst, dass der Karton ganz nach vorne gezogen ist, -1 heisst, dass er ganz nach
+hinten gedrückt ist. 0 heisst, dass er in der Mitte ist und Zahlen zwischen -1 bis 1 sind
+für entsprechend starke Teilauslenkungen.</p>
+
+<p>Wir können nun Töne programmieren, indem wir dem Computer eine lange Liste mit Zahlenwerten
+geben, die die Auslenkungen des Kartons angeben. Der Computer erzeugt daraus dann einen Strom,
+der den Lautsprecher exakt so lenkt und damit den Ton erzeugt.</p>
+
+<p>Im folgenden haben wir eine Serie von Beispielprogrammen, die von einfachen Tönen
+bis zu einem komplexen Song reichen. Du kannst mit all diesen Beispielprogrammen spielen,
+sie verändern und erweitern.</p>
+
+<p><code>ein_ton.py</code> erzeugt einen einzelnen Ton. Du kannst die Tonhöhe oder Tondauer 
+verändern und auch den Klang des Tones.</p>
+
+<p><code>tonleiter.py</code> erzeugt eine Tonleiter. So siehst du, wie man mehrere Töne nacheinander
+erzeugt. Verändere die Tonleiter oder mache sie schneller oder langsamer.</p>
+
+<p><code>sirene.py</code> erzeugt ein Geräusch ähnlich einer Polizeisirene (Tatüü).</p>
+
+<p><code>wuuu.py</code> Lässt den Klang zwischen zwei Tonhöhen hin- und herwandern.</p>
+
+<p><code>akkord.py</code> Lässt drei Töne gleichzeitig erklingen (ein Akkord). Kannst du einen anderen
+Akkord erzeugen indem du die Tonhöhen änderst?</p>
+
+<p><code>dancetrack.py</code> Dieses Programm führt alle Techniken zusammen und erzeugt einen
+Track/Song, der aus Schlagzeug, Bass und Orgelakkorde besteht. Du kannst zum Beispiel den Bassrythmus
+verändern oder die Orgelakkorde ändern. Oder du führst eine weitere Stimme ein. Oder du machst das
+Schlagzeug komplexer. Es gibt unendlich viele Möglichkeiten.</p>
+
+<p><code>klang_anzeigen.py</code> ist ein Programm, das vier Töne spielt und dann deren Schwingungen
+am Bildschirm anzeigt.</p>
+
+<p>Es gibt folgende Befehle:</p>
+
+<ul>
+<li><code>stille(dauer)</code> erzeugt eine Stille (also keinen Ton) für die angegebene Dauer</li>
+<li><code>rauschen(dauer)</code> Erzeugt ein Rauschen</li>
+<li><code>ton(frequenz, dauer)</code> Erzeugt einen normalen Ton (also mit Obertönen)</li>
+<li><code>ton_sinus(frequenz, dauer)</code> Erzeugt einen reinen Ton der nur eine Frequenz enthält</li>
+<li><code>ton_saege(frequenz, dauer)</code> Erzeugt einen sogenannten Sägezahnton, der scherbelig tönt</li>
+<li><code>bereich_sinus(freq1, freq2, dauer)</code> Erzeugt einen Tonübergang von der ersten zur zweiten Tonhöhe (Frequenz)</li>
+<li><code>bereich_saege(freq1, freq2, dauer)</code> Erzeugt einen Tonübergang von der ersten zur zweiten Tonhöhe (Frequenz)</li>
+<li><code>bumm(dauer)</code> Erzeugt einen Bassdrum-Ton</li>
+<li><code>mix2(a, b)</code> Mischt die Töne a und b zu einem neuen Ton</li>
+<li><code>mix3(a, b, c)</code> Mischt die Töne a, b und c zu einem neuen Ton</li>
+<li><code>mix4(a, b, c, d)</code> Mischt die Töne a, b, c und d zu einem neuen Ton</li>
+<li><code>abspielen(a)</code> Spielt die mit den anderen Befehlen erzeugte Musik a ab.</li>
+</ul>
+
+<p>Die Befehle sind in der Datei <code>music.py</code> definiert. Wenn du Lust hast, kannst du
+schauen, wie sie programmiert sind. Bei Fragen helfe ich gerne weiter.</p>
+
+<p>Wenn ein Befehl eine Tonhöhe resp. Frequenz benötigt, kannst du entweder direkt eine Zahl angeben
+(zum Beispiel 440) oder du gibst vordefinierte Tonhöhen an. Die definierten Höhen sind in der Datei
+<code>toene.py</code> zu sehen. Grundsätzlich kannst du die normalen Tonnamen (c, d, e, f, fis, ges, ...)
+mit 0, 1 oder 2 angehängt verwenden. Also beispielsweise dis2 für ein hohes dis.</p>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+briefstart
+sprache,deutsch
+name,Fritz Fischer
+adresse,Meisenhof 7
+plzort,7788 Freihofen
+anrede,Sehr geehrter Herr Fischer
+text,Wir gratulieren ganz herzlich zum Geburtstag.
+text,Alles Gute auf dem weiteren Lebensweg.
+text,
+text,Herzliche Grüsse
+text,
+text,SwissTelco AG
+briefend
+briefstart
+sprache,englisch
+name,Lucy Spacey
+adresse,Friedhof 5
+plzort,8000 Zürich
+anrede,Dear Ms. Spacey
+text,Congratulations on your birthday.
+text,All the best.
+text,
+text,Best regards
+text,
+text,SwissTelco AG
+briefend
+briefstart
+sprache,franzoesisch
+name,Camille Bloch
+adresse,Rue du pompieres 12
+plzort,2345 Lully
+anrede,Cher Camille
+text,Félicitations pour votre anniversaire.
+text,Heureux dans leur vie future.
+text,
+text,Cordialement
+text,
+text,SwissTelco SA
+briefend
