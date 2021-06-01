@@ -19,7 +19,7 @@ Für jeden Bereich gibt es eine Anleitung, die Hintergrundinformationen liefert 
 Voraussetzung ist eine normale Python-Installation. Es kann zum Beispiel sehr gut mit IDLE gearbeitet
 werden.
 
-- [Barcode](barcode/README.md)
+- [Barcode](barcodes/README.md)
 - [Text](text/README.md)
 - [Grafik](graphics/README.md)
 - [Musik](music/README.md)
